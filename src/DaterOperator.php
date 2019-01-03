@@ -7,11 +7,11 @@ use Carbon\Carbon;
 class DaterOperator
 {
 
-    public function convert($date, $format, $lang = "en")
+    public function convert($date, $formatOf, $lang = "en")
     {
         $language = $this->languageArray($lang);
         $date = Carbon::parse($date);
-        $formatOfDates = explode(',', $format);
+        $formatOfDates = explode(' ', $formatOf);
         $result = "";
         foreach ($formatOfDates as $formatOfDate) {
             switch ($formatOfDate) {
@@ -22,15 +22,16 @@ class DaterOperator
                     $result = $result . $date->year . " ";
                     break;
                 case "m":
-                    $result = $result . $date->month . " ";
+                    $result = $result . $language[$date->month - 1] . " ";
                     break;
             }
-            if (str_contains($format, '-')) {
-                $month = explode('-', $format);
-                $result = $result . substr($language[$date->month - 1], $month[1]);
+            if (str_contains($formatOfDate, '-')) {
+                $month = explode('-', $formatOfDate);
+                $result = $result . substr($language[$date->month - 1],0, $month[1]) . " ";
             }
 
         }
+        return $result;
 
 
     }

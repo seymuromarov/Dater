@@ -41,7 +41,7 @@ now u can use api like this
 use Seymuromarov\Dater\Facades\Dater; //it is not necessary
  
     $date="2018-01-05";
-    $format="d,m,y"; 
+    $format="d m y"; 
     $lang="en"; // az, ru u can ask for more languages
     Dater::convert($date,$format,$lang); 
     Dater::convert($date,$format); //$default lang is english
@@ -64,13 +64,13 @@ Some examples are given below :
 use Seymuromarov\Dater\Facades\Dater; //it is not necessary
 
     $date="2018-01-05";
-    $format="d,m3,y"; 
+    $format="d m3 y"; 
     Dater::convert($date,$format);
     //result: 5 Jan 2017
-    $format="d,m3,y2"; 
+    $format="d m3 y2"; 
     Dater::convert($date,$format);
     //result: 5 Jan 17
-    $format="m3,d,y2"; 
+    $format="m3 d y2"; 
     Dater::convert($date,$format);
     //result: Jan 5 17
 
