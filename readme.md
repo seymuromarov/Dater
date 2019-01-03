@@ -28,7 +28,7 @@ after this add alias in config/app.php file:
 ``` 
 'aliases' => [
  //...
-        'Randomcrap' => Seymuromarov\Dater\Facades\Dater::class,
+        'Dater' => Seymuromarov\Dater\Facades\Dater::class,
  ],
 ```
 
