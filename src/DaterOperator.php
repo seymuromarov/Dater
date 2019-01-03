@@ -42,18 +42,18 @@ class DaterOperator
         switch ($lang) {
             case "en":
                 return [
-                    'January',
-                    'February',
-                    'March',
-                    'April',
-                    'May',
-                    'June',
-                    'July',
-                    'August',
-                    'September',
-                    'October',
-                    'November',
-                    'December'
+                    'january',
+                    'february',
+                    'march',
+                    'april',
+                    'may',
+                    'june',
+                    'july',
+                    'august',
+                    'september',
+                    'october',
+                    'november',
+                    'december'
                 ];
                 break;
             case "ru":
@@ -74,35 +74,35 @@ class DaterOperator
                 break;
             case "az":
                 return [
-                    'Yanvar',
-                    'Fevral',
-                    'Mart',
-                    'Aprel',
-                    'May',
-                    'İyun',
-                    'İyul',
-                    'Avqust',
-                    'Sentyabr',
-                    'Oktyabr',
-                    'Noyabr',
-                    'Dekabr'
+                    'yanvar',
+                    'fevral',
+                    'mart',
+                    'aprel',
+                    'may',
+                    'iyun',
+                    'iyul',
+                    'avqust',
+                    'sentyabr',
+                    'oktyabr',
+                    'noyabr',
+                    'dekabr'
 
                 ];
                 break;
             default:
                 return [
-                    'January',
-                    'February',
-                    'March',
-                    'April',
-                    'May',
-                    'June',
-                    'July',
-                    'August',
-                    'September',
-                    'October',
-                    'November',
-                    'December'
+                    'january',
+                    'february',
+                    'march',
+                    'april',
+                    'may',
+                    'june',
+                    'july',
+                    'august',
+                    'september',
+                    'october',
+                    'november',
+                    'december'
                 ];
         }
     }
