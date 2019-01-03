@@ -1,0 +1,43 @@
+{
+  "name": "seymuromarov/dater",
+  "description": "Laravel api for converting date for humans reading",
+  "type": "laravel",
+  "keywords": [
+    "azerbaijan",
+    "Dater",
+    "human date",
+    "date conversion",
+    "date converting",
+    "readable date",
+    "date api",
+    "format date",
+    "laravel",
+    "api"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Seymur Omarov",
+      "email": "omarov.seymur@outlook.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Seymuromarov\\Dater\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Seymuromarov\\Dater\\DaterServiceProvider"
+      ],
+      "aliases": {
+        "Dater": "Seymuromarov\\Dater\\Facade\\Dater"
+      }
+    }
+  }
+}
