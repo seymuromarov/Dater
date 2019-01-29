@@ -1,6 +1,6 @@
 ## About Project
 
-Laravel api for converting date for humans reading
+Laravel api for converting date for humans reading  (without depending on server localization)
 
 ## Requirements
 
